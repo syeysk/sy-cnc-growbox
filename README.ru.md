@@ -1,6 +1,6 @@
-# CNC Growbox [RU](README.ru.md)
+# ЧПУ Гроубокс [EN](README.md)
 
-It's the first CNC growbox programm for Arduino boards.
+Прошивка первого ЧПУ-гроубокса для плат Arduino
 
 ## Преимущества
 
@@ -13,12 +13,13 @@ It's the first CNC growbox programm for Arduino boards.
 - для ручного управления гроубоксом через компьютер разработано [приложение с графическим интрефейсом](https://github.com/syeysk/sy-cnc-growbox-py).
 - [приложение](https://github.com/syeysk/sy-cnc-growbox-py) также имеет API-модуль для разработки кастомных интерфейсов управления.
 
-## Contacts
+## Контакты
 
-- Telegram: https://t.me/py_free_developer
-- Free news about the projects: https://t.me/syeysk_it
+- Телеграм для Ваших вопросов: https://t.me/py_free_developer
+- Свежие новости о проектах: https://t.me/it_syeysk
+- Следите за нами на Яндекс.Дзен: https://dzen.ru/syeysk
 
-## Inspired by
+## Чем вдохновлено
 
 Very simple
 - https://github.com/tinkersprojects/G-Code-Arduino-Library
