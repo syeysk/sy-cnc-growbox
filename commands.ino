@@ -157,6 +157,14 @@ void g_cc_get_max_value() {
 
 /* Others g-code */
 
+void g_turn_off_all_auto() {
+  for (byte actuator_code=0; actuator_code < COUNT_ACTUATORS; actuator_code++) {
+    day_settings[actuator_code].auto_is_on = 0;
+    cycle_settings[actuator_code].auto_is_on = 0;
+    cc_settings[actuator_code].auto_is_on = 0;
+  }
+}
+
 void g_actuator_write() {
   if(Commands.availableValue('A') && Commands.availableValue('V'))
     actuators[(int)Commands.GetValue('A')].write((byte)Commands.GetValue('V'));

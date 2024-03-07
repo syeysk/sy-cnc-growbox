@@ -46,10 +46,12 @@ void g_cc_set_min_value();
 void g_cc_get_min_value();
 void g_cc_set_max_value();
 void g_cc_get_max_value();
+void g_turn_off_all_auto();
 
 commandscallback commands[NumberOfCommands] = {
   {"E0", g_actuator_write},
   {"E2", g_get_value_from_sensor},
+  {"E3", g_turn_off_all_auto},
   {"E10",g_ok},
 
   {"E100", g_toggle_automation},
@@ -157,7 +159,7 @@ Sensor sensors[COUNT_SENSORS] = {
 Actuator actuators[COUNT_ACTUATORS] = {
   Actuator(ACTUATOR_PROTOCOL_DIGITALIO, LED_BUILTIN), // humidifier
   Actuator(ACTUATOR_PROTOCOL_ANALOGIO, 5), // extractor
-  Actuator(ACTUATOR_PROTOCOL_ANALOGIO, 3), // light
+  Actuator(ACTUATOR_PROTOCOL_ANALOGIO, 3), // white light
 };
 
 // void draw(void) {
@@ -190,8 +192,8 @@ void setup(void) {
   cycle_settings[1].value_on = 1;
 
   cc_settings[0].sensor_id = 1;
-  cc_settings[0].min_value = 65;
-  cc_settings[0].max_value = 70;
+  cc_settings[0].min_value = 70;
+  cc_settings[0].max_value = 75;
 
   for (byte i=0; i < COUNT_ACTUATORS; i++) {
     if (day_settings[i].auto_is_on) {
