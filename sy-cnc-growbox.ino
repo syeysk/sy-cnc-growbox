@@ -8,7 +8,7 @@
 #include "gcode.h"
 
 #define ADD_TEST_G_CODE 1
-#define NumberOfCommands 25
+#define NumberOfCommands 26
 #define use_display 0
 
 #define SUNRISE 0
@@ -189,7 +189,7 @@ void setup(void) {
   cycle_settings[1].auto_is_on = 1;
   day_settings[2].auto_is_on = 1;
 
-  cycle_settings[1].value_on = 1;
+  cycle_settings[1].value_on = 255;
 
   cc_settings[0].sensor_id = 1;
   cc_settings[0].min_value = 70;

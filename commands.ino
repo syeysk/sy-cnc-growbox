@@ -104,7 +104,7 @@ void g_set_light_value_part_of_day() {
 
 void g_get_light_value_part_of_day() {
   if(Commands.availableValue('A') && Commands.availableValue('P')) {
-    byte p = (byte)Commands.GetValue("P");
+    byte p = (byte)Commands.GetValue('P');
     if (p == DAY) {
       Commands.comment('V', get_day_settings('A')->day_sun_value);
     } else if (p == NIGHT) {
