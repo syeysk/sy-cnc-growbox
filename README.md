@@ -13,6 +13,10 @@ It's the first CNC growbox programm for Arduino boards.
 - для ручного управления гроубоксом через компьютер разработано [приложение с графическим интрефейсом](https://github.com/syeysk/sy-cnc-growbox-py).
 - [приложение](https://github.com/syeysk/sy-cnc-growbox-py) также имеет API-модуль для разработки кастомных интерфейсов управления.
 
+## Scheme
+
+![scheme](scheme.png)
+
 ## Contacts
 
 - Telegram: https://t.me/py_free_developer
