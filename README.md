@@ -1,4 +1,4 @@
-# CNC Growbox [RU](README.ru.md)
+# CNC Growbox ([русская версия](README.ru.md))
 
 It's the first CNC growbox programm for Arduino boards.
 
